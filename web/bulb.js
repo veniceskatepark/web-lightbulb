@@ -15,7 +15,7 @@ function connect() {
     console.log('Requesting Bluetooth Device...');
     navigator.bluetooth.requestDevice(
         {
-            filters: [{ services: [0x2A00] }]
+            filters: [{ services: [0x1800] }]
         })
         .then(device => {
             console.log('> Found ' + device.name);
